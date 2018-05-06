@@ -4,11 +4,11 @@
 	<th :style="{'text-align': column.align}">
         <component v-if="column.headerComponent" :is="column.headerComponent" :column="column"></component>
         <span v-else>{{ column.label  }}</span>
-		<span
+		<i
 			v-if="column.sortable"
 			:class="classes"
 			@click="toggleSort"
-		></span>
+		></i>
 	</th>
 </template>
 
