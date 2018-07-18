@@ -20,8 +20,8 @@ class Settings {
             pager: {
                 classes: {
                     pager: 'pagination',
-                    li: '',
-                    a: '',
+                    li: 'page-item',
+                    a: 'page-link',
                     selected: 'active',
                     disabled: 'disabled'
                 },

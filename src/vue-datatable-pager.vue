@@ -1,7 +1,7 @@
 <style></style>
 
 <template>
-	<nav v-if="show">
+	<nav v-if="show" aria-label="pagination">
 		<ul v-if="type === 'abbreviated'" :class="pagination_class">
 			<datatable-button v-if="page - 3 >= 1" :value="1" @click="setPageNum"></datatable-button>
 			<datatable-button v-if="page - 4 >= 1" disabled>...</datatable-button>
